@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de receitas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <section class="top-area">
+        <picture>
+            <img src="/assets/pamonha.png" class="pamonha-img" alt="foto de uma pamonha">
+        </picture>
+
+        <div class="info-area">
+            <h1 class="title">
+                Pamonha
+            </h1>
+
+            <div class="description">
+                Prato típico com milho verde ralado
+            </div>
+
+            <div class="buttons-area">
+                <div class="counter-label">Porções</div>
+
+                <div class="controllers-area">
+                    <button id="button-less" onclick="increaseCounterBy(-1)">
+                        <img src="/assets/icon/less.svg" alt="botão para decrementar">
+                    </button>
+
+                    <span id="counter-value">01</span>
+
+                    <button id="button-plus" onclick="increaseCounterBy(1)">
+                        <img src="/assets/icon/plus.svg" alt="botão para incrementar">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bottom-area">
+        <div class="ingredient-area">
+            <div class="icon-title">
+                <img src="/assets/icon/basket.svg" alt="ícone de uma cestinha">
+                <h1 class="ingredients-title">Ingredientes</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>1 espiga de milho verde</li>
+                    <li>1 colher de sopa de açúcar</li>
+                    <li>1 colher de sopa de manteiga</li>
+                    <li>Sal a gosto</li>
+                    <li>Palha de milho (para embrulhar)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="prepare-mode-area">
+            <div class="icon-title">
+                <img src="/assets/icon/pan.svg" alt="ícone de uma panelinha">
+                <h1 class="prepare-mode-title">Modo de Preparo</h1>
+            </div>
+
+            <div class="list">
+                <ol>
+                    <li>Descasque a espiga de milho e corte os grãos.</li>
+                    <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+                    <li>Coloque a massa nas palhas de milho e feche bem.</li>
+                    <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
+                    <li>Deixe esfriar e sirva.</li>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
